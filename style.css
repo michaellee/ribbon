@@ -1,0 +1,44 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; }
+
+body {
+  background: #3C3C48;
+  color: #FFF;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+
+a {
+  color: #98B15F; }
+
+.ribbon--left, .ribbon--right {
+  background: #FFF;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0.625em 3em;
+  position: absolute;
+  text-decoration: none;
+  z-index: 99999; }
+
+.align--center {
+  text-align: center; }
+
+.centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.ribbon--left {
+  left: -3.125em;
+  top: 2.5em;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }

@@ -1,0 +1,51 @@
+@import "bourbon/bourbon";
+
+html, body{
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+
+body{
+	background: #3C3C48;
+	color: #FFF;
+	font-family: $helvetica;
+}
+
+a{
+	color: #98B15F;
+}
+
+%ribbon{
+	background: #FFF;
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 0.625em 3em;
+	position: absolute;
+	text-decoration: none;
+	z-index: 99999;
+}
+
+.align--center{
+	text-align: center;
+}
+
+// Centerer by Chris Coyier http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
+.centerer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include transform(translate(-50%, -50%));
+}
+
+.ribbon--left{
+	@extend %ribbon;
+	left: -3.125em;
+	top: 2.5em;
+	@include transform(rotate(-45deg));
+}
+
+.ribbon--right{
+	@extend %ribbon;
+}
