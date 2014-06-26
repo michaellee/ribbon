@@ -6,7 +6,7 @@
   padding: 0.625em 3em;
   position: absolute;
   text-decoration: none;
-  top: 2.5em;
+  top: 2.875em;
   z-index: 99999;
   left: -3.125em;
   -webkit-transform: rotate(-45deg);
@@ -23,7 +23,7 @@
   padding: 0.625em 3em;
   position: absolute;
   text-decoration: none;
-  top: 2.5em;
+  top: 2.875em;
   z-index: 99999;
   right: -3.125em;
   -webkit-transform: rotate(45deg);
