@@ -1,0 +1,28 @@
+@import "bourbon/bourbon";
+
+@mixin ribbon($direction){
+	background: #FFF;
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 0.625em 3em;
+	position: absolute;
+	text-decoration: none;
+	top: 2.5em;
+	z-index: 99999;
+	@if $direction == left{
+		left: -3.125em;
+		@include transform(rotate(-45deg));
+	} @else{
+		right: -3.125em;
+		@include transform(rotate(45deg));
+	}
+}
+
+.ribbon--left{
+	@include ribbon(left);	
+}
+
+.ribbon--right{
+	@include ribbon(right);
+}
